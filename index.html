@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messya Carment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Messya Carment</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn" onclick="location.href='https://github.com/MessyaCarment05'">Visit Github</button>
+    </header>
+    <section id="profile" class="profile">
+        <div class="profile-container">
+            <img src="pics/profile.jpg" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Messya Carment</h1>
+                    <span>Computer Science Student</span>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-color-2" onclick="window.open('CV.pdf')">
+                        Download CV
+                    </button>
+                   
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact
+                    </button>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-github" onclick="location.href='https://github.com/MessyaCarment05'"></i>
+                    <i class="fa-brands fa-linkedin" onclick="location.href='https://linkedin.com/in/messya-carment-95b703251'"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="pics/profile.jpg" 
+                alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="pics/experience.png" alt="experience icon" class="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
