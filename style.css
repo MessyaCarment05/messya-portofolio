@@ -8,7 +8,7 @@
     list-style: none;
 }
 /* Header Section */
-header{
+nav{
     position: fixed;
     top:1rem;
     left:50%;
@@ -24,6 +24,7 @@ header{
     border-radius: 3rem;
     z-index:1000;
 }
+
 .logo{
     color:white;
     font-size: 1.3rem;
@@ -81,6 +82,12 @@ li a:hover::before{
 #menu-icon{
     font-size: 2rem;
     display: none;
+}
+.bawah{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5rem;
 }
 
   
@@ -434,7 +441,7 @@ footer ul li a{
 /* Media Query (Responsive) */
 @media(max-width:1280px)
 {
-    header{
+    nav{
         padding: 1rem 2rem;
         gap:2rem;
     }
@@ -451,15 +458,15 @@ footer ul li a{
 
 @media(max-width:768px)
 {
-    header{
+    nav{
         gap:1rem;
         padding : 1rem 1rem;
     }
 
-    header .logo{
+    nav .logo{
         font-size: 1rem;
     }
-    header .visit-btn{
+    nav .visit-btn{
         display: none;
     }
     .profile-container{
@@ -529,97 +536,124 @@ footer ul li a{
 
 @media(max-width:600px)
 {
-    header #menu-icon{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        margin-top: 1rem;
-        top:100%;
-        width: 100%;
-        padding:1rem;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: rgba(0,0,0,0.9);
-        border-radius: 3rem;
-        display: none;
-    }
-    .nav-links li{
-        margin-top: 1.5rem;
-        padding: 1rem;;
-    }
-    .nav-links.active{
-        display: block;
-    }
-    header{
-        padding: 1rem 5rem;
-        gap:8rem;
-    }
-    header .logo{
-        font-size: 1.5rem;
-    }
-    .profile-container img{
-        width:80vw;
-    }
-    footer ul{
-        gap:1rem;
-    }
-    #contact{
-        height:40vh;
-    }
-    .about-containers,
-    .contact-info-upper-container{
-        flex-wrap: wrap;
-    }
-    .contact-info-container{
-        margin:0;
-    }
-    .contact-info-container p{
-        font-size:3rem;
-    
-    }
-    .title-about{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    .title-skills{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    .section-title{
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 650;
-        margin-bottom: 2rem;
-    }
-    .title-contact{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    .contact-info-container{
+    nav {
+        position: fixed;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         align-items: center;
         justify-content: center;
-        gap:0.5rem;
-        margin:1rem;
+        gap: 5rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(8px);
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 3rem;
+        z-index: 1000;
     }
-    .contact-info-container p{
-        font-size:70%;
-        height:80%;
+    li a {
+        color: white;
+        font-weight: 300;
     }
-    .copyright{
-        font-size: 75%;
-        margin-top:2rem;
-    }
-    
+    #menu-icon {
+        font-size: 2rem;
+        display: none; 
+        cursor: pointer;
+        display: block;
+    } 
+        .nav-links {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 1rem;
+            color: white;
+            display: none; /* Hidden until active */
+            flex-direction: column;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 3rem;
+        }
+        .nav-links.active {
+            display: flex;
+           margin-top: 1rem;
+        }
+        .nav-links li {
+            margin-top: 1.5rem;
+            padding: 1rem;
+        }
+        .visit-btn {
+            display: none;
+        }
+        .logo {
+            font-size: 1.1rem;
+        }
+        .bawah {
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .profile-container img{
+            width:80vw;
+        }
+        footer ul{
+            gap:1rem;
+        }
+        #contact{
+            height:40vh;
+        }
+        .about-containers,
+        .contact-info-upper-container{
+            flex-wrap: wrap;
+        }
+        .contact-info-container{
+            margin:0;
+        }
+        .contact-info-container p{
+            font-size:3rem;
+        
+        }
+        .title-about{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .title-skills{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .section-title{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 650;
+            margin-bottom: 2rem;
+        }
+        .title-contact{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .contact-info-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:0.5rem;
+            margin:1rem;
+        }
+        .contact-info-container p{
+            font-size:70%;
+            height:80%;
+        }
+        .copyright{
+            font-size: 75%;
+            margin-top:2rem;
+        }
 }
 
 
