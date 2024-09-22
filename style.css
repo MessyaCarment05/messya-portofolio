@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+/* Header Section */
 header{
     position: fixed;
     top:1rem;
@@ -81,6 +82,19 @@ li a:hover::before{
     font-size: 2rem;
     display: none;
 }
+/* section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  } */
+  
+/* Profile Section */
 section{
     min-height: 100vh;
     padding: 8rem 12%;
@@ -158,3 +172,141 @@ section{
 .socials i:hover{
     transform: scale(1.1);
 }
+
+/* About Section */
+.section__pic-about{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.section__text__about{
+    text-align: center;
+    
+}
+.title-about{
+    
+    font-size:3rem;
+    text-align: center;
+  
+}
+.section-about-container{
+    display:flex;
+  
+}
+#about{
+    width:100%;
+    padding-top: 4vh;
+    height: 96vh;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.details-container{
+    padding:1.5rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+  
+   
+}
+.section-container-about{
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+    width:100%;
+}
+.icon-about{
+    cursor: pointer;
+     height: 2rem;
+      
+}
+.detail-about-title
+{
+     background: linear-gradient(to right,
+    rgb(255,0,255), rgb(0,157,255));
+    transform: scale(1.03);
+    background-clip: text;
+    color:transparent;
+}
+
+/* Skills Section */
+.title-skills{
+    
+    font-size:3rem;
+    text-align: center;
+  
+}
+.icon-skills{
+    cursor: default;
+     height: 2rem;
+      
+}
+
+.skills-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.skills-details-container{
+    padding:1.5rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+  
+   
+}
+.section__text__skills{
+    text-align: center; 
+}
+
+#experience{
+    position: relative;
+}
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width:10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+}
+
