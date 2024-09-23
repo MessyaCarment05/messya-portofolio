@@ -346,6 +346,7 @@ article{
     width: 100%;
     height:50vh;
     border-radius: 1rem;
+   
   
 }
 .project-card p{
@@ -365,9 +366,13 @@ article{
     color:black
 }
 .project-card h3{
-    font-size:2rem;
-    font-weight:500;
+    font-size:1.5rem;
+    font-weight:600;
+ 
 }
+/* .img-project-wrapper{
+    height:50%;
+} */
 /* Contact */
 .section__text__contact{
     text-align: center;
@@ -629,9 +634,9 @@ footer ul li a{
         }
         .section-title{
             text-align: center;
-            font-size: 3rem;
-            font-weight: 650;
-            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
         }
         .title-contact{
             text-align: center;
