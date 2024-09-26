@@ -200,6 +200,7 @@ section{
     justify-content: center;
     box-sizing: border-box;
     min-height: fit-content;
+   
 }
 .about-containers{
     gap: 2rem;
@@ -253,8 +254,9 @@ section{
 }
 
 /* Skills Section */
+
 .title-skills{
-    
+
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
@@ -643,6 +645,9 @@ footer ul li a{
             font-size: 2rem;
             font-weight: 600;
             margin-bottom: 1rem;
+        }
+        .section__text__skills{
+            margin-top:10rem;
         }
         .contact-info-container{
             display: flex;
