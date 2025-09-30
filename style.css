@@ -351,6 +351,20 @@ article{
    
   
 }
+.tech-stack {
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-stack span {
+  background-color: #f0f0f0; /* warna kotak */
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
 .project-card p{
     text-align: left;
     display: flex;
