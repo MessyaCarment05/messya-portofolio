@@ -357,9 +357,8 @@ article{
   flex-wrap: wrap;
   gap: 6px;
 }
-
 .tech-stack span {
-  background-color: #f0f0f0; /* warna kotak */
+  background-color: #f0f0f0; 
   color: #333;
   padding: 4px 8px;
   border-radius: 6px;
